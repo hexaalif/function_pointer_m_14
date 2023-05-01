@@ -9,8 +9,8 @@ int main()
     // int ans = floor(x);
     // int ans = round(x);
     // int ans = sqrt(x);
-    int ans = pow(x, y);
+    double ans = pow(x, y);
     // int ans = round(x);
-    printf("%d", ans);
+    printf("%0.2lf", ans);
     return 0;
 }

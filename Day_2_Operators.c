@@ -8,10 +8,22 @@ int main()
     scanf("%lf\n", &cost);
     scanf("%d\n", &tip);
     scanf("%d\n", &tax);
-    double cs = cost / 100;
-    double ttip = round(cs * tip);
-    double ttax = round(cs * cost);
-    int ttl = round(ttax + cost + ttip);
-    printf("%d", ttl);
+    // double cs = (cost / 100);
+    // double ttip = (cs * tip);
+    // double ttax = (cs * cost);
+    float ttl = ((cost * tip) / 100 + (cost * tax) / 100 + cost);
+    int round_cost;
+    round_cost = ttl;
+    float diff = ttl - round_cost;
+    if (diff >= 0.5)
+    {
+        round_cost++;
+        printf("%d", round_cost);
+    }
+    else
+    {
+        printf("%d", round_cost);
+    }
+
     return 0;
 }

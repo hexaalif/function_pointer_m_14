@@ -1,8 +1,12 @@
 #include <stdio.h>
 
+// return_type name(parameter){
+//     code ;
+//     return what;
+// }
+
 int main()
 {
-    // printf("\n");
-    // fsfsaf
+
     return 0;
 }

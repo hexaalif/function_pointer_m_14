@@ -9,9 +9,9 @@ int main()
     scanf("%d\n", &tip);
     scanf("%d\n", &tax);
     double cs = cost / 100;
-    double ttip = cs * tip;
-    double ttax = cs * cost;
-    int ttl = ttax + cost + ttip;
+    double ttip = round(cs * tip);
+    double ttax = round(cs * cost);
+    int ttl = round(ttax + cost + ttip);
     printf("%d", ttl);
     return 0;
 }

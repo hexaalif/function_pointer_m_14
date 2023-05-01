@@ -7,7 +7,9 @@ int main()
     scanf("%lf", &x);
     // int ans = ceil(x);
     // int ans = floor(x);
-    int ans = round(x);
+    // int ans = round(x);
+    int ans = sqrt(x);
+    // int ans = round(x);
     printf("%d", ans);
     return 0;
 }

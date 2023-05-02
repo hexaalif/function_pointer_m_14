@@ -24,6 +24,6 @@ int main()
     {
         printf("%d", round_cost);
     }
-
+    printf("\n");
     return 0;
 }
